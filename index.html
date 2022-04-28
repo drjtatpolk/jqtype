@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>The Coffee Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+</head>
+
+<body>
+<img src="fruit.png" id="imghover"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function()
+    {
+        $('#imghover').hover(function()//img when mouse is on image
+        {    
+        $('#imghover').attr('src', 'fruit.png');
+    },
+    function() //img when mouse off photo
+    {
+        $('#imghover').attr('src', 'icedcoffee.jpg');
+        })
+    })
+</script>
+</body>
+</html>
